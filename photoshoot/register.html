@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photoshoot Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Photoshoot Booking Form</h1>
+
+        <form id="bookingForm" action="connect.php" method = "post">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br>
+
+            <!-- Preferred Date -->
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <!-- Photoshoot Type -->
+            <label for="type">Photoshoot Type:</label>
+            <select id="type" name="type" required>
+                <option value="w">Wedding</option>
+                <option value="p">Portrait</option>
+                <option value="e">Event</option>
+                <option value="o">Others</option>
+            </select><br>
+
+            <button type="submit" class="btn">Submit</button>
+
+            
+      
+
+        <!-- Success Message (Initially Hidden) -->
+        <div id="successMessage" style="display: none;">
+            <p>Your booking has been successfully submitted!</p>
+        </div>
+    </div>
+</form>
+
+    <!-- External Scripts
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script> -->
+</body>
+</html>
